@@ -47,11 +47,12 @@ export default class Login extends Component {
             }}>
             <div className="pt-5"></div>
             <img height={50} src={logo} alt="Kater"/>
+            <h3 className="mt-3 mb-3">Log in to your account</h3>
             <Form
             noValidate
             validated={validated}
             onSubmit={e => this.handleSubmit(e)}
-            className="mb-5 mt-5">
+            className="mb-5">
               <Form.Group controlId="formBasicEmail">
                 <Form.Control
                   type="email"
@@ -74,9 +75,9 @@ export default class Login extends Component {
                 />
               </Form.Group>
               <Button variant="primary" type="submit" >
-                Submit
+                Login
               </Button>
-            </Form>;
+            </Form>
           </Col>
         </Card>
       </Col>
