@@ -31,7 +31,7 @@ export default class Login extends Component {
   }
   render() {
     const { validated, email, password } = this.state;
-    return (<Container>
+    return (<Container className="login-container">
       <Col md={{
           span: 12,
           offset: 0
@@ -46,7 +46,7 @@ export default class Login extends Component {
               offset: 1
             }}>
             <div className="pt-5"></div>
-            <img height={70} src={logo} alt="Kater"/>
+            <img height={50} src={logo} alt="Kater"/>
             <Form
             noValidate
             validated={validated}
